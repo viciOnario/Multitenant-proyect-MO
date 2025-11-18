@@ -1,0 +1,179 @@
+{
+  "organizaciones": [
+    {
+      "id": "1",
+      "nombreOficial": "Salud Ocupacional S.A.",
+      "cuit": "123456789"
+    }
+  ],
+  "empresasCliente": [
+    {
+      "id": "100",
+      "razonSocial": "Constructora XYZ",
+      "cuit": "888888",
+      "organizacionPadre": 1
+    },
+    {
+      "id": "101",
+      "razonSocial": "Minera del Sur",
+      "cuit": "999999",
+      "organizacionPadre": 1
+    },
+    {
+      "id": "6d5b",
+      "razonSocial": "Persico",
+      "cuit": "202020202020",
+      "organizacionPadre": 1
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@saludocupacional.com",
+      "nombre": "Admin",
+      "apellido": "Principal",
+      "rol": "EMO_ADMIN",
+      "organizacion": 1,
+      "password": "123"
+    },
+    {
+      "id": "2",
+      "email": "medico@saludocupacional.com",
+      "nombre": "Dr.",
+      "apellido": "Arias",
+      "rol": "MEDICO",
+      "organizacion": 1,
+      "password": "123"
+    }
+  ],
+  "pacientes": [
+    {
+      "id": "500",
+      "dni": "20111222",
+      "nombre": "Ana",
+      "apellido": "García",
+      "empresaCliente": 100,
+      "organizacion": 1,
+      "estadoPreEmpleo": "APROBADO_APTO"
+    },
+    {
+      "id": "501",
+      "dni": "20333444",
+      "nombre": "Luis",
+      "apellido": "Torres",
+      "empresaCliente": 101,
+      "organizacion": 1,
+      "estadoPreEmpleo": "EN_PROCESO"
+    },
+    {
+      "id": "502",
+      "dni": "20555666",
+      "nombre": "Carla",
+      "apellido": "Mendoza",
+      "empresaCliente": 100,
+      "organizacion": 1,
+      "estadoPreEmpleo": "APROBADO_APTO"
+    }
+  ],
+  "citas": [
+    {
+      "id": "1dc5",
+      "title": "Examen: Luis Torres",
+      "patientId": "501",
+      "doctorId": "2",
+      "start": "2025-10-29T08:30:00-03:00",
+      "end": "2025-10-29T11:19"
+    }
+  ],
+  "diagnosticos": [
+    {
+      "id": "b54b",
+      "patientId": "500",
+      "cie10_code": "G54.4",
+      "cie10_label": "G54.4 - Lumbosacral root disorders, not elsewhere classified",
+      "finalStatus": "APROBADO_CON_RESTRICCION",
+      "createdAt": "2025-10-29T14:30:37.982Z"
+    },
+    {
+      "id": "47c6",
+      "patientId": "500",
+      "cie10_code": "M40.46",
+      "cie10_label": "M40.46 - Postural lordosis, lumbar region",
+      "finalStatus": "APROBADO_APTO",
+      "createdAt": "2025-10-29T23:30:25.428Z"
+    }
+  ],
+  "perfiles": [
+    {
+      "id": "admin",
+      "nombre": "Administrador"
+    },
+    {
+      "id": "medico",
+      "nombre": "Médico"
+    },
+    {
+      "id": "recepcionista",
+      "nombre": "Recepcionista"
+    },
+    {
+      "id": "laboratorio",
+      "nombre": "Laboratorio"
+    },
+    {
+      "id": "cliente",
+      "nombre": "Cliente"
+    }
+  ],
+  "clientes": [
+    {
+      "id": "c1",
+      "razon_social": "Constructora XYZ"
+    },
+    {
+      "id": "c2",
+      "razon_social": "Minera del Sur"
+    },
+    {
+      "id": "c3",
+      "razon_social": "Persico S.A."
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "u1",
+      "nombre": "Admin Principal",
+      "email": "admin@lynna.com",
+      "password": "123",
+      "role": "admin",
+      "estado": "ACTIVO",
+      "clienteId": null
+    },
+    {
+      "id": "u2",
+      "nombre": "Dra. Arias",
+      "email": "medico@lynna.com",
+      "password": "123",
+      "role": "medico",
+      "estado": "ACTIVO",
+      "clienteId": null
+    },
+    {
+      "id": "u3",
+      "nombre": "Juan Pérez",
+      "email": "jperez@cliente.com",
+      "password": "123",
+      "role": "cliente",
+      "estado": "ACTIVO",
+      "clienteId": "c1"
+    },
+    {
+      "id": "a99d",
+      "nombre": "Juan",
+      "email": "juanjane1991@lynna.com",
+      "password": "123456",
+      "role": "laboratorio",
+      "clienteId": null
+    }
+  ]
+}

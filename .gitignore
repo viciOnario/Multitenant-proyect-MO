@@ -1,0 +1,32 @@
+## Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+## Vite / build
+dist/
+build/
+client/dist/
+
+## Env
+.env
+.env.local
+.env.*.local
+client/.env
+server/.env
+
+## IDEs + OS
+.DS_Store
+.vscode/
+.idea/
+
+## Logs and caches
+logs/
+coverage/
+.cache/
+
+## OS files
+Thumbs.db
+ehthumbs.db
